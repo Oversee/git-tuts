@@ -99,32 +99,10 @@ section "The Git Repo Basics" do
   EOS
 
   slide <<-EOS, :block
-    \e[1mGit Init
-    --------\e[0m
-    To initialize a new simply use 'git init'
-
-    This will initialize an empty repo in the current working directory.
-
-    Any global configurations you have set will be applied.
-  EOS
-
-  slide <<-EOS, :block
     $:~/my_repo/>\e[1m git init\e[0m
     Initialized empty Git repository in /home/dsmith/my_repo/.git/
     
     $:~/my_repo/> 
-  EOS
-
-  slide <<-EOS, :block
-    \e[1mGit Status
-    ----------\e[0m
-    Produces report of all modified, deleted and untracked files within a repo.
-
-    Use this to determine what needs to be staged for commit.
-
-    If a file meets the criteria in .gitignore then it will not be displayed in
-    the status message.
-
   EOS
 
   slide <<-EOS, :block
@@ -140,16 +118,6 @@ section "The Git Repo Basics" do
     nothing added to commit but untracked files present (use "git add" to track)
 
     $:~/my_repo/> 
-  EOS
-
-  slide <<-EOS, :block
-    \e[1mGit Add
-    -------\e[0m
-    Stage all modifications to previously committed files and to any new files
-    that you want to add to the repo. 
-
-    Performing this command on a directory will recursively add all files.
-
   EOS
 
   slide <<-EOS, :block
@@ -170,24 +138,6 @@ section "The Git Repo Basics" do
   EOS
 
   slide <<-EOS, :block
-    \e[1mGit Commit
-    ----------\e[0m
-    Commit locally staged changes to the the local repo.
-    
-    Unlike 'svn commit' which will push to the shared repo.
-
-    'git commit' will open the editor set in either the .gitconfig or by the
-    'EDITOR' environment variable.
-
-    After save & quiting the editor the commit will complete.
-
-    Quiting the editor, w/o saving, will cancel the commit.
-
-    '-m "<commit message>"'
-    '-a' will automatically stage all tracked changes and commit them.
-  EOS
-
-  slide <<-EOS, :block
     $:~/my_repo/>\e[1m git commit -m "NEATO commit message"\e[0m
     [master (root-commit) 0bde0dd] Initial commit
     1 file changed, 1 insertion(+)
@@ -202,15 +152,6 @@ section "The Git Repo Basics" do
      
     $:~/my_repo/> 
   EOS
-
-  slide <<-EOS, :block
-    \e[1mGit Rm
-    ------\e[0m
-    Remove a tracked file from version control and the file system.
-
-    If a file is not tracked within the repo, 'git rm' will ignore the file.
-
-   EOS
 
   slide <<-EOS, :block
     $:~/my_repo/>\e[1m ls\e[0m
@@ -239,14 +180,6 @@ section "The Git Repo Basics" do
   EOS
 
   slide <<-EOS, :block
-    \e[1mGit Branch
-    ----------\e[0m
-    Branching is fast and simple within git.
-
-    Entire branch structure is contained within the repo.
-  EOS
-
-  slide <<-EOS, :block
     # Create a new branch named 'features'
     $:~/my_repo/>\e[1m git branch features\e[0m
     
@@ -262,12 +195,6 @@ section "The Git Repo Basics" do
       origin/master
       origin/v4
 
-  EOS
-
-  slide <<-EOS, :block
-    \e[1mGit Checkout
-    ------------\e[0m
-    Switch to another working branch. 
   EOS
 
   slide <<-EOS, :block
