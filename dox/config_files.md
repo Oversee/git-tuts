@@ -29,7 +29,7 @@ Sample:
 
 Git Ignore (.gitignore)
 -------------------------
-Include file extenstions, names and negations. You can set a global level ignore file in your *.gitconfig* and you can include a repo level *.gitignore* at the root of the repository.
+Include file extensions, names and negations. You can set a global level ignore file in your *.gitconfig* and you can include a repo level *.gitignore* at the root of the repository.
 
 Sample:
 ```
@@ -50,7 +50,7 @@ etc/*
 !etc/malarkey/*
 ```
 
-Note that if a file is commited to the repo and then it is added to the ignore list, git will continue to track it. If you want to remove it from tracking use ```git rm <file name>``` to remove the file from the repo and commit the changes.
+Note that if a file is committed to the repo and then it is added to the ignore list, git will continue to track it. If you want to remove it from tracking use ```git rm <file name>``` to remove the file from the repo and commit the changes.
 
 Submodules (.gitmodules)
 ------------------------

@@ -62,7 +62,7 @@ section "Basic Configuration Files" do
   slide <<-EOS, :block
     \e[1mGit Ignore (.gitignore)
     -----------------------\e[0m
-    Include file extenstions, names and negations. 
+    Include file extensions, names and negations. 
 
     You can set a global ignore if you like or you can add custom ignore files
     per repo.
@@ -80,7 +80,7 @@ section "Basic Configuration Files" do
     # Ignore a singular file
     a_very_SpeciFic_file.name
 
-    # Ignore an entire directory and all sub dirs and files
+    # Ignore an entire directory and all sub dies and files
     etc/*
 
     # Negate the ignore above for a portion of files within etc/
@@ -145,7 +145,7 @@ section "The Git Repo Basics" do
   slide <<-EOS, :block
     \e[1mGit Add
     -------\e[0m
-    Stage all modifcations to previously commited files and to any new files
+    Stage all modifications to previously committed files and to any new files
     that you want to add to the repo. 
 
     Performing this command on a directory will recursively add all files.
@@ -183,7 +183,7 @@ section "The Git Repo Basics" do
 
     Quiting the editor, w/o saving, will cancel the commit.
 
-    '-m "<commmit message>"'
+    '-m "<commit message>"'
     '-a' will automatically stage all tracked changes and commit them.
   EOS
 
@@ -277,7 +277,7 @@ section "The Git Repo Basics" do
     # Create and checkout a newly named branch.
     $:~/my_repo/>\e[1m git checkout -B <branch name>\e[0m
     
-    # Discard any uncommited modifications and move the file back to the HEAD.
+    # Discard any uncommitted modifications and move the file back to the HEAD.
     $:~/my_repo/>\e[1m git checkout -- <file name>\e[0m 
 
   EOS
@@ -423,7 +423,7 @@ end
 
 section "... More Advanced Fun ..." do
   slide <<-EOS, :block
-    \e[1mBare Clone Repositroy
+    \e[1mBare Clone Repository
     ---------------------\e[0m
     Makes a publishable form of a repo.
 
@@ -446,7 +446,7 @@ section "... More Advanced Fun ..." do
     NOTE:
     External code under git version control should NEVER be copied to a local repo.
 
-    Use 'git submodule' to link the desred external code to your repo.
+    Use 'git submodule' to link the desired external code to your repo.
 
     If you need to modify the code in the submodule, then fork it and have a blast!
   EOS
@@ -517,9 +517,9 @@ section "... More Advanced Fun ..." do
   EOS
 
   slide <<-EOS, :block
-    \e[1mDetatched Checkout
-    ------------------\e[0m
-    Checkout a named branch in a detatched state.
+    \e[1detached Checkout
+    ----------------\e[0m
+    Checkout a named branch in a detached state.
 
     Will not have the ability to commit back to the repo unless given a name.
 

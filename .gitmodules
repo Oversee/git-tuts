@@ -1,0 +1,3 @@
+[submodule "tkn"]
+	path = tkn
+	url = git://github.com/fxn/tkn.git
