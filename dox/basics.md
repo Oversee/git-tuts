@@ -53,3 +53,11 @@ Git Pull
 Git Push
 --------
 The opposite of pull. This will attempt to push committed changes to a remote repo. This will typically default to ```git push origin <branch>```. If you want to specify the remote repo to pull from just use ```git push <remote> <branch name>```.
+
+Git Remote
+----------
+Remote allows you to add and remove remote repo paths. This is essential for synchronizing multiple machines and repos. 
+- ```git remote add <path to repo> <name>``` will add the remote path aliased as the input name and will add fetch and push rights.
+- ```git remote rm <name>``` will remove the input alias.
+- ```git remote``` will list all remote aliases.
+- ```git remote -v``` will list all remote aliases along with their remote paths.

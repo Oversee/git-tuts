@@ -504,8 +504,8 @@ section "... More Advanced Fun ..." do
   slide <<-EOS, :block
     # Move uncommitted changes to stash hash
     $:~/my_repo/>\e[1m git stash\e[0m
-    Saved working directory and index state WIP on master: 42b6efc Added sanitize functions for table mode in Parser.pm - Auto-Commit - Wed Dec 19 16:45:03 2012
-    HEAD is now at 42b6efc Added sanitize functions for table mode in Parser.pm - Auto-Commit - Wed Dec 19 16:45:03 2012
+    Saved working directory and index state WIP on master: 42b6efc Added sanitize functions for table mode in Parser.pm
+    HEAD is now at 42b6efc Added sanitize functions for table mode in Parser.pm
     
     # List all available stash objects
     $:~/my_repo/>\e[1m git stash list\e[0m
