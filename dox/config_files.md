@@ -1,5 +1,6 @@
 Git Configuration Files
 =======================
+---
 
 Config File (.gitconfig)
 --------------------------

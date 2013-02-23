@@ -1,9 +1,11 @@
 Git Related Links
 =================
+---
 
 The Dox
 -------
-- My go to for info on git commands: [http://git-scm.com/documentation](http://git-scm.com/documentation)
+- [gihub:help](https://help.github.com/): The best source for practicle user tutorials for git and github.
+- Another good 'goto' source for git commands: [http://git-scm.com/documentation](http://git-scm.com/documentation)
 - The [man pages](http://www.kernel.org/pub/software/scm/git/docs/)
 
 Tutorials
@@ -33,6 +35,7 @@ Tools
 - [git-cola](http://git-cola.github.com/) A GUI for Linux, Mac and Windows.
 - [A general list of GUIs](http://git-scm.com/downloads/guis)
 
-Work-flows
+Work-Flows
 ----------
+- [github-flow](http://scottchacon.com/2011/08/31/github-flow.html)
 - [gitflow](http://nvie.com/posts/a-successful-git-branching-model/)
